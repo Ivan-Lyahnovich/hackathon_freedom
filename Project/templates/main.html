@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/jobs_cards.css">
+    <link rel="stylesheet" href="../css/select.css">
+    <link rel="stylesheet" href="../css/style_mobile.css">
+    <link rel="stylesheet" href="../css/filters_menu.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+<div class="head">
+    <ul class="left_menu">
+<!--        <li><a href="#" class="load_btn">Загрузить резюме</a></li>-->
+    </ul>
+    <ul class="right_menu">
+        <li class="login">Войти</li>
+        <li class="register">Регистрация</li>
+    </ul>
+    <div class="menu-icon">&#9776;</div>
+</div>
+<div class="popup-menu">
+    <ul>
+        <li>Войти</li>
+        <li>Регистрация</li>
+
+    </ul>
+</div>
+<div class="container">
+    <header class="header">
+        <div class="input-container">
+            <input type="text" placeholder="Поиск по навыкам или должности" class="search-input">
+        </div>
+        <button class="search-button">Найти</button>
+    </header>
+
+
+    <!-- Results Info and Sorting -->
+    <section class="results-info">
+        <p>Найдено <span id="result-count"></span> резюме</p>
+        <div class="sorting">
+            <select class="sorting-select">
+                <option value="">Зарплата</option>
+                <option value="less">меньше </option>
+                <option value="more">больше </option>
+            </select>
+        </div>
+    </section>
+
+    <main class="content">
+        <aside class="filter">
+            <div class="filter-group">
+                <div class="button-group" id="filter-buttons">
+
+                </div>
+            </div>
+            <button class="reset-filters-btn">Сбросить фильтры</button>
+        </aside>
+
+        <section class="job-list" id="job-list">
+
+        </section>
+
+    </main>
+
+    <button class="filter-toggle-btn">Фильтры</button> <!-- Кнопка для показа фильтра -->
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+<script src="../js/choises.js"></script>
+<script src="../js/reset_filters.js"></script>
+<script src="../js/header_menu.js"></script>
+<script src="../js/filters_menu.js"></script>
+
+</body>
+</html>
