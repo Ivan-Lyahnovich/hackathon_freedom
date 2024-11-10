@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    transition: 0.1s;
+}
+:root {
+    --main-color: #4FB84F;
+    --main-border-color: #045433;
+    --main-back-color: #347534;
+    --white: #fff;
+    --black: #000;
+    --h3-font-size: 22px;
+    --border-color: rgba(194, 205, 216, 0.34);
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+.head {
+    height: 10vh;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 12%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.head ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.head ul li {
+    margin: 0 15px;
+    cursor: pointer;
+}
+.head ul li:hover {
+    color: var(--main-color);
+}
+.load_btn {
+    white-space: nowrap;
+    padding: 5px 15px;
+    border: 1px solid var(--main-border-color);
+    border-radius: 10vh;
+    color: var(--main-color);
+    transition: 0.12s;
+}
+
+.load_btn:hover {
+    border: 1px solid var(--main-color);
+}
+
+
+
+.search-input {
+    flex: 1;
+    height: 7vh;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 16px;
+}
+.search-button {
+    width: 20%;
+    height: 7vh;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.search-button:hover{
+    background-color: var(--main-back-color);
+}
+/* Основной стиль для контейнера */
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Стиль для инпута */
+.search-input {
+    padding-left: 35px; /* Отступ слева для значка */
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"%3E%3Cpath fill="%23aaa" d="M10 2a8 8 0 105.3 14.3l4.3 4.3a1 1 0 001.4-1.4l-4.3-4.3A8 8 0 0010 2zm0 2a6 6 0 110 12A6 6 0 0110 4z"%3E%3C/path%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 16px;
+}
+
+
+
+.results-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 30px;
+    font-size: 20px;
+}
+
+#result-count {
+    font-weight: bold;
+}
+
+
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+.filter {
+    width: 25%;
+    height: fit-content;
+    padding: 0 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filter-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #555;
+    background-color: #f3f4f6;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #e2e8f0;
+}
+
+.filter-group {
+    margin-top: 20px;
+}
+.filter-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.filter-category {
+    padding-bottom: 5%;
+}
+
+.filter-category h4 {
+    color: var(--main-border-color);
+    font-size: 1em;
+    padding: 0 0 5px 5px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filter-button {
+    background-color: transparent;
+    border: 0px solid #ddd;
+    padding: 5px 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #e0e0e0;
+}
+.filter-button.active {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 2px;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
